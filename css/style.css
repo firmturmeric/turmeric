@@ -230,6 +230,7 @@
 }
  .offer-box,.slide {
      color: #FFFFFF;
+     font-weight: 600;
      font-size: 13px;
      padding: 2px 15px;
      font-family: 'Poppins', sans-serif;
@@ -1102,11 +1103,38 @@
 
   .row{
     display:flex;
+    
      justify-content:center;
       align-items:center;
   }
 
+  .ceo-desk-card {
+    width: 90%; /* col-md-6 */
+ 
+
+   }
+
+  @media (min-width: 992px) {
+    .ceo-desk-card {
+        width: 66.666666%; /* col-lg-4 */
+    }
+   }
+
+  @media (min-width: 1200px) {
+    .ceo-desk-card {
+        width: 66.666666%; /* col-xl-4 */
+    }
+   }
+
+   .ceo-blog-box{
+     display: flex;
+     flex-direction: row;
+   
+   }
+
+
  .blog-box{
+    
      -webkit-box-shadow: 0px 5px 35px 0px rgba(148, 146, 245, 0.15);
      box-shadow: 0px 5px 35px 0px rgba(148, 146, 245, 0.15);
      background: #ffffff;
@@ -1116,7 +1144,7 @@
      position: relative;
 }
  .title-blog{
-     padding: 40px 30px 40px 30px;
+     padding: 20px 20px 20px 20px;
 }
  .title-blog h3{
      font-size: 20px;
