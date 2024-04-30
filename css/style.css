@@ -1099,6 +1099,13 @@
      padding: 70px 0px;
      background: #f5f5f5;
 }
+
+  .row{
+    display:flex;
+     justify-content:center;
+      align-items:center;
+  }
+
  .blog-box{
      -webkit-box-shadow: 0px 5px 35px 0px rgba(148, 146, 245, 0.15);
      box-shadow: 0px 5px 35px 0px rgba(148, 146, 245, 0.15);
