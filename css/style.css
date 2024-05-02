@@ -1097,15 +1097,14 @@
 
 /*------------------------------------------------------------------ Blog -------------------------------------------------------------------*/
  .latest-blog{
-     padding: 70px 0px;
+     padding: 70px 30px;
      background: #f5f5f5;
 }
 
-  .row{
+  .row{    
     display:flex;
-    
-     justify-content:center;
-      align-items:center;
+    justify-content:center;
+    align-items:center;
   }
 
   .ceo-desk-card {
@@ -1116,13 +1115,13 @@
 
   @media (min-width: 992px) {
     .ceo-desk-card {
-        width: 66.666666%; /* col-lg-4 */
+        width: 86.666666%; /* col-lg-4 */
     }
    }
 
   @media (min-width: 1200px) {
     .ceo-desk-card {
-        width: 66.666666%; /* col-xl-4 */
+        width: 86.666666%; /* col-xl-4 */
     }
    }
 
@@ -1143,9 +1142,13 @@
  .blog-content{
      position: relative;
 }
+
  .title-blog{
      padding: 20px 20px 20px 20px;
-}
+     font-size: medium;
+     font-weight: bold; 
+ }
+
  .title-blog h3{
      font-size: 20px;
      font-weight: 700;
