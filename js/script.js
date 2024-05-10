@@ -18,3 +18,6 @@ function changeSlide(direction) {
     }
   });
 }
+
+// Add this line to set the first slide as active initially
+slides[currentSlide].classList.add('active');
