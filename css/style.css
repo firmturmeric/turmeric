@@ -1522,6 +1522,18 @@ ul.cart-list>li.total>.btn:hover {
 /*--------------------------------------------------------------------Recipe-----------------------------------------------------------------------------*/
 
 
+@media screen and (max-width: 1200px) {
+    .container { 
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .container {
+        width: 50%;
+    }
+}
+
 .slide{
     display: none;
     text-align: justify;
