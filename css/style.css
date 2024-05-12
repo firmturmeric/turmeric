@@ -1358,14 +1358,25 @@ ul.cart-list>li.total>.btn:hover {
     height: 350px;
 }
 
-
 .ceo-img-box {
+    text-align: center; /* Center the image */
+  }
+  
+  .ceo-img-box img {
+    max-width: 100%; /* Maximum width of the image */
+    height: auto; /* Maintain aspect ratio */
+    width: auto;
+  }
+
+/* .ceo-img-box {
     width: 500px;
     height: 600px;
-}
+} */
+
+
 .ceo-img-box img{
-    width: 90%;
-    height: 60%;
+    width: 50%;
+    height: 40%;
 }
 
 .blog-box {
@@ -1525,6 +1536,7 @@ ul.cart-list>li.total>.btn:hover {
   
   .slide.active {
     display: block;
+
   }
   
   /* .recipe-slider-button {
@@ -1547,11 +1559,14 @@ ul.cart-list>li.total>.btn:hover {
   
  .container_r{
     background-color: aliceblue;
+    overflow:auto;
     
  }
 
+
   .cardbox{
     border-radius: 7%;
+    
   }
 
   .imgbox{
@@ -1609,36 +1624,19 @@ ul, ol {
   /* Default font size */
 /* Default font size */
 .slide {
-    font-size: 14px; /* Set an initial font size */
+    font-size: 12px;
+     
+    /* Set an initial font size */
+  }
+  
+
+  .card-box{
+    overflow:visible;
   }
   
   /* Media query for smaller screens */
-  @media screen and (max-width: 600px) {
-    .slide {
-      font-size: 7px; /* Decrease font size for smaller screens */
-    }
-  }
+ 
   
-  /* Media query for even smaller screens */
-  @media screen and (max-width: 400px) {
-    .direction {
-      font-size: 5px; /* Further decrease font size for very small screens */
-    }
-
-  }
-
-  @media screen and (max-width: 600px) {
-    .direction {
-      font-size: 7px; /* Decrease font size for smaller screens */
-    }
-  }
-  
-  /* Media query for even smaller screens */
-  @media screen and (max-width: 400px) {
-    .direction {
-      font-size: 5px; /* Further decrease font size for very small screens */
-    }
-  }
   /* Media query for smaller screens */
   
 /*----------------------------------------------------------------end-recipe---------------------------------------------------------------------------------------------------*/
