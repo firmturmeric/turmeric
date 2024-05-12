@@ -1345,42 +1345,27 @@ ul.cart-list>li.total>.btn:hover {
 
 }
 
-.ceo-container{
-    width:100%;
-}
-
-
-
-
-
-@media (min-width: 992px) {
-    .ceo-blog-box {
-        width: 86.666666%;
-        /* col-lg-4 */
-    }
-}
-
-@media (min-width: 1200px) {
-    .ceo-blog-box {
-        width: 86.666666%;
-        /* col-xl-4 */
-    }
-}
 
 .ceo-blog-box {
     display: flex;
     flex-direction: row;
-
-}
-
-.ceo-blog-box {
+    justify-content: center;
     width: 100%;
-    height: 100%;
+
+}
+.ceo-blog-content{
+    width: 700px;
+    height: 350px;
 }
 
-.ceo-blog-img {
-    width: 150%;
-    height: 150%;
+
+.ceo-img-box {
+    width: 500px;
+    height: 600px;
+}
+.ceo-img-box img{
+    width: 90%;
+    height: 60%;
 }
 
 .blog-box {
