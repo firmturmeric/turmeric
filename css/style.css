@@ -1339,8 +1339,14 @@ ul.cart-list>li.total>.btn:hover {
 }
 
 .ceo-blog {
+    max-width: 100%;
+    width: 100%;
     padding: 70px 30px;
 
+}
+
+.ceo-container{
+    width:100%;
 }
 
 
@@ -1527,6 +1533,7 @@ ul.cart-list>li.total>.btn:hover {
 .slide{
     display: none;
     text-align: justify;
+     
    
 
   }
@@ -1583,7 +1590,72 @@ ul.cart-list>li.total>.btn:hover {
     right: 0;
     transform: translateY(-50%);
   }
+  /* For Ingredients and Methods text */
+ul, ol {
+    max-width: 100%; /* Adjust the max-width as needed */
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+  
+  /* For smaller screens, adjust the font size */
+  @media screen and (max-width: 600px) {
+    ul, ol {
+      font-size: 10px; /* Adjust the font size for smaller screens */
+    }
+  }
+  .textbox {
+    width: 100%; /* Ensure the text box takes full width */
+    max-width: 100%; /* Limit the maximum width */
+    word-wrap: break-word;
+    overflow-wrap: break-word; /* Allow text to wrap */
+  }
+  @media screen and (max-width: 600px) {
+    .direction  {
+      font-size: 5px; /* Adjust the font size for smaller screens */
+    }
+  }
+  .direction {
+    width: 100%; /* Ensure the direction div takes full width */
+    max-width: 100%; /* Limit the maximum width */
+    word-wrap: break-word;
+    overflow-wrap: break-word; /* Allow text to wrap */
+  }
 
+  /* Default font size */
+/* Default font size */
+.slide {
+    font-size: 14px; /* Set an initial font size */
+  }
+  
+  /* Media query for smaller screens */
+  @media screen and (max-width: 600px) {
+    .slide {
+      font-size: 7px; /* Decrease font size for smaller screens */
+    }
+  }
+  
+  /* Media query for even smaller screens */
+  @media screen and (max-width: 400px) {
+    .direction {
+      font-size: 5px; /* Further decrease font size for very small screens */
+    }
+
+  }
+
+  @media screen and (max-width: 600px) {
+    .direction {
+      font-size: 7px; /* Decrease font size for smaller screens */
+    }
+  }
+  
+  /* Media query for even smaller screens */
+  @media screen and (max-width: 400px) {
+    .direction {
+      font-size: 5px; /* Further decrease font size for very small screens */
+    }
+  }
+  /* Media query for smaller screens */
+  
 /*----------------------------------------------------------------end-recipe---------------------------------------------------------------------------------------------------*/
 /*------------------------------------------------------------------ Instagram Feed -------------------------------------------------------------------*/
 .instagram-box {
