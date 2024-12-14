@@ -1338,46 +1338,52 @@ ul.cart-list>li.total>.btn:hover {
     align-items: center;
 }
 
-
-
-
-/* .ceo-blog-content{
-    width: 50%;
-    height: 350px;
-}
-
-.ceo-img-box {
-    text-align: center; /* Center the image */
-  
-  
-  
-
- /* .ceo-img {
-   max-width: 100%;
-   width: 50%;
-    
-
-}  */
-
-.img-fluid-ceo{
-
-    max-width:100%;
+.img-fluid-ceo {
+    max-width: 100%;
     width: 100%;
-    height:100%;
+    height: 100%;
 }
-
 
 .blog-box {
-
     -webkit-box-shadow: 0px 5px 35px 0px rgba(148, 146, 245, 0.15);
     box-shadow: 0px 5px 35px 0px rgba(148, 146, 245, 0.15);
     background: #ffffff;
     margin-bottom: 30px;
 }
 
-.blog-content {
+.ceo-blog-content {
     position: relative;
+    font-weight:900; /* Makes text semibold */
+    font-size: large;
 }
+
+/* Media Query for Larger Screens */
+@media (min-width: 992px) {
+    .ceo-blog-box {
+        display: flex;
+        flex-direction: row; /* Align items side by side */
+        padding: 20px;
+    }
+
+    .ceo-img-box {
+        flex: 1; /* Image takes 1 part */
+        padding-right: 20px;
+    }
+
+    .ceo-blog-content {
+        flex: 2; /* Content takes 2 parts */
+        padding-left: 20px;
+    }
+}
+
+@media (max-width: 1200px ) {
+    .ceo-blog-content {
+        font-size:medium;
+        
+     }
+}
+
+
 
 .title-blog {
     padding: 20px 20px 20px 20px;
@@ -1456,9 +1462,9 @@ ul.cart-list>li.total>.btn:hover {
     display: flex;
     justify-content: center;
     padding: 10px;
-    margin: 50px;
-    
-    
+    margin-top: -50px;
+    margin-bottom: 60px;
+
 }
 
 .topic {
@@ -1467,32 +1473,25 @@ ul.cart-list>li.total>.btn:hover {
 }
 
 .customer-reviews {
-
     display: flex;
     justify-content: center;
-    flex-direction: row;
+    flex-direction: row; /* Retain row layout for larger screens */
     background: white;
-    padding-bottom: 40px;
+    padding-bottom: 30px;
     max-width: 100%;
-    width:100%;
+    width: 100%;
     text-align: center;
-
 }
 
 .review {
-
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr); /* Retain 2-column layout for larger screens */
     gap: 70px;
-
     background-color: white;
-    /* box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, .8); */
     border-radius: 5px;
-   
     width: 90%;
     text-align: justify;
-    
-
+    margin: 0 auto; /* Center the reviews */
 }
 
 .reviewer {
@@ -1508,12 +1507,64 @@ ul.cart-list>li.total>.btn:hover {
     font-size: 20px;
     font-weight: bold;
     margin-top: 5px;
-    color: red
+    color: red;
 }
 
 .para {
     font-weight: 600;
 }
+
+/* Responsive styles for tablets and smaller screens */
+@media (max-width: 768px) {
+    .review {
+        grid-template-columns: 1fr; /* Single column layout for smaller screens */
+        gap: 30px;
+    }
+
+    .topic {
+        font-size: 28px;
+    }
+
+    .reviewer {
+        font-size: 18px;
+    }
+
+    .rating {
+        font-size: 24px;
+    }
+
+    .comment {
+        font-size: 18px;
+    }
+
+    .para {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .topic {
+        font-size: 24px;
+    }
+
+    .reviewer, .rating, .comment {
+        font-size: 14px;
+    }
+
+    .para {
+        font-size: 12px;
+    }
+
+    .customer-reviews {
+        padding: 15px;
+    }
+
+    .heading{
+        margin-top: -80px;
+        margin-bottom: 0px;
+    }
+}
+
 
 /* ---------------------------------------------------------------------------------------------------------------------------------------------------------- */
 /*--------------------------------------------------------------------Recipe-----------------------------------------------------------------------------*/
@@ -1572,6 +1623,7 @@ ul.cart-list>li.total>.btn:hover {
     border-radius: 10%;
   }
 
+  
   .prev {
     position: absolute;
     top: 50%;
